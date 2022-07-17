@@ -3,3 +3,40 @@ html, body {
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  background-color: #EDEDED;
+  margin-top: 16px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 375px;
+  background-color: #FFF;
+  border: 1px solid #E7E7E7;
+  border-radius: 8px;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo, .user-avatar {
+  padding: 16px 15px;
+}
+
+.logo {
+  width: 127px;
+}
+
+.user-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
