@@ -21,10 +21,14 @@ body {
 }
 
 /* header */
-header {
+header, .post-content {
   display: flex;
+}
+
+header {
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #c6c6c6;
 }
 
 .logo, .user-avatar {
@@ -35,8 +39,23 @@ header {
   width: 127px;
 }
 
-.user-avatar {
+.user-avatar, .avatar {
   width: 34px;
   height: 34px;
   border-radius: 50%;
+}
+
+/* post content */
+.post-content {
+  width: 348px;
+  margin: 10px 16px;
+  text-align: left;
+}
+
+.avatar {
+  margin-right: 7px;
+}
+
+.user-full-name {
+  font-weight: 700;
 }
