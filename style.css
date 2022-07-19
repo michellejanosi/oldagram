@@ -21,7 +21,7 @@ body {
 }
 
 /* header */
-header, .post-content {
+header, .user-info {
   display: flex;
 }
 
@@ -47,9 +47,13 @@ header {
 
 /* post content */
 .post-content {
+  display: inline;
   width: 348px;
-  margin: 10px 16px;
-  text-align: left;
+}
+
+.user-info {
+  flex-direction: row;
+  margin: 11px 16px;
 }
 
 .avatar {
@@ -58,4 +62,8 @@ header {
 
 .user-full-name {
   font-weight: 700;
+}
+
+.post-image {
+  width: 100%;
 }
