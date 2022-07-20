@@ -1,3 +1,11 @@
+let postContent = document.querySelector('.post-content');
+const avatar = document.querySelector('.avatar');
+const userFullName = document.querySelector('.user-full-name');
+const locationText = document.querySelector('.location-text');
+const postImage = document.querySelector('.post-image');
+const likeCount = document.querySelector('.like-count');
+const userNameCaption = document.querySelector('.username-caption');
+
 const posts = [
   {
     name: 'Vincent van Gogh',
@@ -28,3 +36,30 @@ const posts = [
     likes: 152,
   },
 ];
+
+window.onload = renderPost;
+
+function renderPost() {
+  for (const post of posts) {
+    postContent.innerHTML += `
+      <div class="user-info">
+        <img class="avatar" src="${post.avatar}" alt="post image user avatar">
+        <div class="user-text">
+          <div class="user-full-name">${post.name}</div>
+          <div class="location-text">${post.location}</div>
+        </div>
+      </div>
+      <img src="${post.post}" class="post-image" alt="post image">
+      <div class="post-body">
+        <div class="icons">
+          <img src="images/icon-heart.png" class="icon" alt="heart icon">
+          <img src="images/icon-comment.png" class="icon" alt="comment icon">
+          <img src="images/icon-dm.png" class="icon" alt="share icon">
+        </div>
+        <div class="like-count">${post.likes} likes</div>
+        <div class="username-caption"><span class="bold">${post.username}</span> ${post.comment}</div>
+      </div>
+    `;
+  }
+}
+
