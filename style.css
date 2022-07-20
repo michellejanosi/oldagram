@@ -20,8 +20,14 @@ body {
   border-radius: 8px;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 /* header */
-header, .user-info {
+header, 
+.user-info,
+.icons {
   display: flex;
 }
 
@@ -66,4 +72,24 @@ header {
 
 .post-image {
   width: 100%;
+}
+
+/* post body */
+.post-body {
+  margin: 16px 19px 16px 10px;
+}
+.icon {
+  width: 18.65px;
+  height: 18.65px;
+  margin-right: 20px;
+  font-weight: 700;
+}
+
+.like-count {
+  margin-top: 11.87px;
+  font-weight: 700;
+}
+
+.username-caption {
+  margin-top: 11.87px;
 }
