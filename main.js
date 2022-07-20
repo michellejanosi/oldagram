@@ -1,10 +1,4 @@
 let postContent = document.querySelector('.post-content');
-const avatar = document.querySelector('.avatar');
-const userFullName = document.querySelector('.user-full-name');
-const locationText = document.querySelector('.location-text');
-const postImage = document.querySelector('.post-image');
-const likeCount = document.querySelector('.like-count');
-const userNameCaption = document.querySelector('.username-caption');
 
 const posts = [
   {

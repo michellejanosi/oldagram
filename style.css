@@ -9,7 +9,7 @@ body {
   font-size: 13px;
   font-weight: 400;
   background-color: #EDEDED;
-  margin-top: 16px;
+  margin: 16px 0;
 }
 
 .container {
@@ -59,7 +59,7 @@ header {
 
 .user-info {
   flex-direction: row;
-  margin: 11px 16px;
+  margin: 11px;
 }
 
 .avatar {
