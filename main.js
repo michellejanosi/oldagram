@@ -50,8 +50,8 @@ function renderPost() {
           <img src="images/icon-comment.png" class="icon" alt="comment icon">
           <img src="images/icon-dm.png" class="icon" alt="share icon">
         </div>
-        <div class="like-count">${post.likes} likes</div>
-        <div class="username-caption"><span class="bold">${post.username}</span> ${post.comment}</div>
+      <div class="like-count">${post.likes} likes</div>
+      <div class="username-caption"><span class="bold">${post.username}</span> ${post.comment}</div>
       </div>
     `;
   }

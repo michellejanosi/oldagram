@@ -15,7 +15,6 @@ body {
 .container {
   margin: 0 auto;
   width: 375px;
-  background-color: #FFF;
   border: 1px solid #E7E7E7;
   border-radius: 8px;
 }
@@ -24,17 +23,23 @@ body {
   font-weight: 700;
 }
 
+.header, .post {
+  background-color: #FFF;
+}
+
 /* header */
-header, 
+.header, 
 .user-info,
 .icons {
   display: flex;
 }
 
-header {
+.header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #c6c6c6;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .logo, .user-avatar {
@@ -78,6 +83,7 @@ header {
 .post-body {
   margin: 16px 19px 16px 10px;
 }
+
 .icon {
   width: 18.65px;
   height: 18.65px;
