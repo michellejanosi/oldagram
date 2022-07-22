@@ -1,5 +1,3 @@
-let postContent = document.querySelector('.post-content');
-
 const posts = [
   {
     name: 'Vincent van Gogh',
@@ -31,29 +29,4 @@ const posts = [
   },
 ];
 
-window.onload = renderPost;
-
-function renderPost() {
-  for (const post of posts) {
-    postContent.innerHTML += `
-      <div class="user-info">
-        <img class="avatar" src="${post.avatar}" alt="post image user avatar">
-        <div class="user-text">
-          <div class="user-full-name">${post.name}</div>
-          <div class="location-text">${post.location}</div>
-        </div>
-      </div>
-      <img src="${post.post}" class="post-image" alt="post image">
-      <div class="post-body">
-        <div class="icons">
-          <img src="images/icon-heart.png" class="icon" alt="heart icon">
-          <img src="images/icon-comment.png" class="icon" alt="comment icon">
-          <img src="images/icon-dm.png" class="icon" alt="share icon">
-        </div>
-      <div class="like-count">${post.likes} likes</div>
-      <div class="username-caption"><span class="bold">${post.username}</span> ${post.comment}</div>
-      </div>
-    `;
-  }
-}
 

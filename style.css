@@ -1,101 +1,107 @@
-html, body {
-  margin: 0;
-  padding: 0;
+:root {
+  --white: #fff;
+  --black: #000;
+  --bg: #ededed;
+}
+
+* {
   box-sizing: border-box;
 }
 
-body {
+html, body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  background-color: #EDEDED;
-  margin: 16px 0;
 }
 
-.container {
-  margin: 0 auto;
-  width: 375px;
-  border: 1px solid #E7E7E7;
-  border-radius: 8px;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.header, .post {
-  background-color: #FFF;
+body {
+  font-size: 12px;
 }
 
 /* header */
-.header, 
-.user-info,
-.icons {
+header {
   display: flex;
-}
-
-.header {
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #c6c6c6;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
+  border-bottom: 1px solid var(--bg);
+  background-color: var(--white);
+  width: 375px;
+  height: 67px;
+  padding: 16px;
+} 
 
-.logo, .user-avatar {
-  padding: 16px 15px;
-}
-
-.logo {
+.logo-img {
   width: 127px;
 }
 
-.user-avatar, .avatar {
+.user-avatar {
+  border-radius: 50%;
   width: 34px;
   height: 34px;
+}
+
+/* post */
+p {
+  margin: 0;
+}
+
+.post {
+  background: var(--white);
+  width: 375px;
+  margin-bottom: 30px;
+}
+
+.post-info {
+  display: flex;
+  padding: 10px;
+}
+
+.post-avatar {
   border-radius: 50%;
+  height: 34px;
+  width: 34px;
 }
 
-/* post content */
-.post-content {
-  display: inline;
-  width: 348px;
+.post-info-detail {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: 7px;
+  justify-content: center;
 }
 
-.user-info {
-  flex-direction: row;
-  margin: 11px;
+.post-name {
+  font-weight: 600;
 }
 
-.avatar {
-  margin-right: 7px;
-}
-
-.user-full-name {
-  font-weight: 700;
-}
-
-.post-image {
+.post-img {
   width: 100%;
+  height: auto;
 }
 
-/* post body */
-.post-body {
-  margin: 16px 19px 16px 10px;
+.post-detail {
+  padding: 20px 10px;
 }
 
-.icon {
-  width: 18.65px;
-  height: 18.65px;
-  margin-right: 20px;
+.post-icon {
+  height: 23px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.post-likes {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.post-comment {
+  margin-top: 10px;
+}
+
+.post-username {
   font-weight: 700;
-}
-
-.like-count {
-  margin-top: 11.87px;
-  font-weight: 700;
-}
-
-.username-caption {
-  margin-top: 11.87px;
 }
