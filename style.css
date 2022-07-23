@@ -3,6 +3,7 @@
   --black: #000;
   --bg: #ededed;
   --icon-hover: #8e8e8e;
+  --border: #dbdbdb;
 }
 
 * {
@@ -29,12 +30,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
   background-color: var(--white);
   width: 375px;
   height: 67px;
   padding: 16px;
   margin-top: 30px;
+  margin-bottom: 15px;
 } 
 
 .logo-img {
@@ -52,10 +55,17 @@ p {
   margin: 0;
 }
 
+.post-avatar {
+  padding: 2px;
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+}
+
 .post {
   background: var(--white);
   width: 375px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
 }
 
 .post-info {
