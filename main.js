@@ -34,24 +34,24 @@ function render() {
   posts.forEach((post) => {
     main.innerHTML += `
       <section class="post">
-      <div class="post-info">
-        <img src="${post.avatar}" alt="avatar" class="post-avatar">
-        <div class="post-info-detail">
-          <p class="post-name">${post.name}</p>
-          <p class="post-location">${post.location}</p>
+        <div class="post-info">
+          <img src="${post.avatar}" alt="avatar" class="post-avatar">
+          <div class="post-info-detail">
+            <p class="post-name">${post.name}</p>
+            <p class="post-location">${post.location}</p>
+          </div>
         </div>
-      </div>
-      <img src="${post.post}" alt="post image" class="post-img">
-      <div class="post-detail">
-        <div class="post-action">
-          <img src="images/icon-heart.png" alt="like" class="post-icon">
-          <img src="images/icon-comment.png" alt="comment" class="post-icon">
-          <img src="images/icon-dm.png" alt="share" class="post-icon">
+        <img src="${post.post}" alt="post image" class="post-img">
+        <div class="post-detail">
+          <div class="post-action">
+            <img src="images/icon-heart.png" alt="like" class="post-icon">
+            <img src="images/icon-comment.png" alt="comment" class="post-icon">
+            <img src="images/icon-dm.png" alt="share" class="post-icon">
+          </div>
+          <p class="post-likes">${post.likes} likes</p>
+          <p class="post-comment"><span class="post-username">${post.username}</span> ${post.comment}</p>
         </div>
-        <p class="post-likes">${post.likes} likes</p>
-        <p class="post-comment"><span class="post-username">${post.username}</span> ${post.comment}</p>
-      </div>
-    </section>
+      </section>
     `;
   }
   );
