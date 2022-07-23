@@ -39,7 +39,7 @@ header {
   width: 127px;
 }
 
-.user-avatar {
+.user-avatar, .post-avatar {
   border-radius: 50%;
   width: 34px;
   height: 34px;
@@ -59,12 +59,6 @@ p {
 .post-info {
   display: flex;
   padding: 10px;
-}
-
-.post-avatar {
-  border-radius: 50%;
-  height: 34px;
-  width: 34px;
 }
 
 .post-info-detail {
