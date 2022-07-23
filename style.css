@@ -2,6 +2,7 @@
   --white: #fff;
   --black: #000;
   --bg: #ededed;
+  --icon-hover: #8e8e8e;
 }
 
 * {
@@ -83,9 +84,13 @@ p {
 }
 
 .post-icon {
-  height: 23px;
-  width: auto;
   margin-right: 10px;
+}
+
+.post-icon:hover {
+  color: var(--icon-hover);
+  fill: var(--icon-hover);
+  cursor: pointer;
 }
 
 .post-likes {
