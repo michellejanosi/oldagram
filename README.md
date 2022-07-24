@@ -15,4 +15,4 @@ Epic self portraits from centuries old amazing artists combined with a modern se
 * Working like function when clicking the heart icon or double-clicking the image.
 
 ## Screenshot
-![screenshot of app](https://github.com/michellejanosi/local-weather/blob/master/img/simple-weather.png "Weather App Screenshot")
+![screenshot of app](https://api.microlink.io?url=https%3A%2F%2Foldagram.netlify.app%2F&overlay.browser=none&overlay.background=%23c1c1c1&screenshot=true&meta=false&embed=screenshot.url "Oldagram App Screenshot")
